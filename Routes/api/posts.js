@@ -25,7 +25,7 @@ const fileFilter = (req, file, cb) => {
 let upload = multer({storage, fileFilter});
 
 // load Post model
-const Post = require('../../models/Post');
+const Post = require('../../Models/Post');
 
 // test route
 router.get('/blog', (req, res) => res.send('post route testing!'));

@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 // load Post model
-const Event = require('../../models/Event');
+const Event = require('../../Models/Event');
 
 
 // @route GET api/events

@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 // load Settings model
-const Settings = require('../../models/Settings');
+const Settings = require('../../Models/Settings');
 
 
 // @route GET api/settings/spotlight
