@@ -6,10 +6,10 @@ const cookieParser = require("cookie-parser");
 
 
 // routes
-const posts = require('./routes/api/posts');
-const events = require('./routes/api/events');
-const authRoute = require("./routes/api/AuthRoute");
-const settings = require("./routes/api/settings");
+const posts = require('./Routes/api/posts');
+const events = require('./Routes/api/events');
+const authRoute = require("./Routes/api/AuthRoute");
+const settings = require("./Routes/api/settings");
 
 const app = express();
 connectDB();
