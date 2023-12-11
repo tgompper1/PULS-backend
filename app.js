@@ -35,7 +35,7 @@ app.use('/api/events', events);
 app.use("/", authRoute);
 app.use("/api/settings", settings);
 
-const PORT = process.env.port || 8001
+const PORT = process.env.port || 80//01
 
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}`)
