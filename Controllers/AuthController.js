@@ -2,6 +2,9 @@ const User = require("../Models/UserModel");
 const { createSecretToken } = require("../util/SecretToken");
 const bcrypt = require("bcrypt");
 
+
+//this signup is not being ued at the moment but is here in case the puls admin decide
+//they want a signup page later on
 module.exports.Signup = async (req, res, next) => {
   try {
     const { email, password, username, createdAt } = req.body;
@@ -23,6 +26,9 @@ module.exports.Signup = async (req, res, next) => {
     console.error(error);
   }
 };
+
+//the login here checks the email and password and checks if the email exists in
+//the database and if so checks if the password is correct
 module.exports.Login = async (req, res, next) => {
   try {
     const { email, password } = req.body;
